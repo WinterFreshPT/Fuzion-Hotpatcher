@@ -1,9 +1,9 @@
 ![Image](https://i.imgur.com/1h1ZaQp.png)
 # 1 VAC Ban On Record
 
-This happened on the 6/6/17 to AimTux, Inuria, Chods etc. Users. This fork of AimTux Fuzion changes the Injector from `gdb` (GNU Debugger) to Hotpatcher. Please keep in mind that I don't have experience with C(++) or CMake/Make. The code edited by me is most likely bad written and shouldn't be used as good example, but **if it works, it works**.
+This happened on the 6/6/17 to AimTux, Inuria, Chods etc. users. This fork of AimTux-Fuzion changes the Injector from the GNU Debugger (which is detected) to Hotpatcher (which is undetected at the time of writing this). Please keep in mind that I don't have experience with C(++) or CMake/Make. The code edited by me is most likely bad written and shouldn't be used as good example, but **if it works, it works**.
 
-This version of Fuzion requires the `hotpatcher` dependency.  
+This version of Fuzion requires the `hotpatch` dependency.  
 You can install it on Arch with the following command:
 ```zsh
 $ sudo pacman -S hotpatch
