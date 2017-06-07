@@ -6,7 +6,7 @@ This happened on the 6/6/17 to AimTux, Inuria, Chods etc. Users. This fork of Ai
 This version of Fuzion requires the `hotpatcher` dependency.  
 You can install it on Arch with the following command:
 ```zsh
-$ sudo pacman -S hotpatcher
+$ sudo pacman -S hotpatch
 ```
 
 The rest of downloading and installation is the same like the original AimTux Fuzion.  
@@ -15,6 +15,6 @@ This has been tested with a **brand new account** on a **VAC-secured official Ca
 
 # Important
 
-Don't use the **uload, rload or update** scripts. The only script that has been updated to Hotpatcher was **load**. Every other script still contains `gdb` code, which will give you a VAC ban.  
+`uload` and `rload` have been disabled by my because I'm not sure how to unload/reload AimTux with HotPatcher. Just close CS:GO (and reopen it) to unload/reload.  
   
 Valve can detect hotpatcher as Injector. Please keep this in mind and don't make this repository to known, so that Valve won't fix it fast.
