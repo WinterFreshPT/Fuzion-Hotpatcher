@@ -23,18 +23,13 @@ if grep -q libFuzion.so /proc/$csgo_pid/maps; then
 fi
 
 input="$(
-sudo gdb -n -q -batch \
-  -ex "attach $csgo_pid" \
-  -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
-  -ex "call \$dlopen(\"$(pwd)/libFuzion.so\", 1)" \
-  -ex "detach" \
-  -ex "quit"
+sudo hotpatcher -l $(pwd)/libFuzion.so $csgo_pid
 )"
 
 last_line="${input##*$'\n'}"
 
 if [ "$last_line" != "\$1 = (void *) 0x0" ]; then
-    /bin/echo -e "\e[32mSuccessfully injected!\e[0m"
+    /bin/echo -e "\e[32mSuccessfully injected using Hotpatcher!\e[0m"
 else
     /bin/echo -e "\e[31mInjection failed, make sure you've compiled...\e[0m"
 fi

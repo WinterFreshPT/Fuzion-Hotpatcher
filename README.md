@@ -16,6 +16,8 @@ A fully featured internal hack for *CounterStrike : Global Offensive* written in
 
 ## Compiling
 
+**Note:** _This fork uses the Hotpatcher as workaround for the current VAC Detection of AimTux(-Fuzion)._
+
 **Note:** _Fuzion Requires an additional package for Lua._
 
 **Note:** _Do NOT download or compile as the root user._
@@ -33,20 +35,20 @@ If you're having problems compiling make sure you've got the latest version of `
 
 __Ubuntu-Based / Debian:__
 ```bash
-sudo apt-get install cmake g++ gdb git libsdl2-dev zlib1g-dev liblua5.3 libxdo-dev
+sudo apt-get install cmake g++ gdb git libsdl2-dev zlib1g-dev liblua5.3 libxdo-dev hotpatcher
 ```
 __Arch:__
 ```bash
-sudo pacman -S base-devel cmake gdb git sdl2 lua xdotool
+sudo pacman -S base-devel cmake gdb git sdl2 lua xdotool hotpatcher
 ```
 __Fedora:__
 ```bash
-sudo dnf install cmake gcc-c++ gdb git libstdc++-static mesa-libGL-devel SDL2-devel zlib-devel lua-devel libX11-devel libxdo-devel
+sudo dnf install cmake gcc-c++ gdb git libstdc++-static mesa-libGL-devel SDL2-devel zlib-devel lua-devel libX11-devel libxdo-devel hotpatcher
 ```
 
 __Gentoo:__
 ```bash
-sudo emerge cmake dev-vcs/git gdb libsdl2 mesa lua xdotool
+sudo emerge cmake dev-vcs/git gdb libsdl2 mesa lua xdotool hotpatcher
 ```
 ===================
 
@@ -76,7 +78,7 @@ You can later update with
 
 ## Injecting
 
-First of all, make sure CSGO is open, it doesn't matter whether you're in game or not. However, it is not recommended to inject while CSGO is loading into a map. 
+First of all, make sure CSGO is open, it doesn't matter whether you're in game or not. However, it is not recommended to inject while CSGO is loading into a map.   
 
 Navigate to the directory where AimTux-Fuzion was built if you haven't ready.
 
@@ -84,7 +86,7 @@ Navigate to the directory where AimTux-Fuzion was built if you haven't ready.
 cd Fuzion
 ```
 
-Now, you can inject the hack with the `load` script
+Now, you can inject the hack with the `load` script.
 
 ```bash
 ./load
@@ -99,6 +101,10 @@ If the injection was successful you'll see a message at the bottom saying `Succe
 Now, go back into csgo, if you're in the main menu of the game you should see a banner in the top left like so:
 
 ![this](http://i.imgur.com/Gb0SV1u.png)
+
+**Please keep in mind that this fork of AimTux Fuzion uses the Hotpatcher Injector as workaround for the [current VAC Detection of AimTux](https://github.com/LWSS/Fuzion/pull/71).**
+
+> Bypassing a VAC Ban by using another injector could work, but isn't proven. Please proceed on your own risk.
 
 ## Using the hack
 
@@ -148,6 +154,8 @@ To add a config, copy the folder containing it to `~/.config/FuzionGH`
 ![fuzion](http://i.imgur.com/5fZDVHa.jpg)
 
 ## Credits
+Special thanks to [Hotpatcher](https://github.com/vikasnkumar/hotpatch) which is used for injecting Fuzion.
+
 Special thanks to the Original AimTux project: https://github.com/AimTuxOfficial/AimTux
 
 Special thanks to [@aixxe](http://www.github.com/aixxe/) ([aixxe.net](http://www.aixxe.net)) for the skin changer and with the initial project, as well as helping this project with source code (Available on [@aixxe's](http://www.github.com/aixxe/) github page.)
