@@ -6,7 +6,7 @@ This happened on the 6/6/17 to AimTux, Inuria, Chods etc. users. This fork of Ai
 This version of Fuzion requires the `hotpatch` dependency.  
 You can install it on Arch with the following command:
 ```zsh
-$ sudo pacman -S hotpatch
+$ yaourt -S hotpatch # Make sure you have yaourt & AUR enabled
 ```
 
 The rest of downloading and installation is the same like the original AimTux Fuzion.  
