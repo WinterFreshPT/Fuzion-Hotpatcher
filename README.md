@@ -11,7 +11,7 @@ $ sudo pacman -S hotpatcher
 
 The rest of downloading and installation is the same like the original AimTux Fuzion.  
   
-This has been tested with a **brand new account** on a **VAC-secured official Casual server** and the account **didn't receive a untrusted ban** (tested on Wed. 7/6/17; one day after the VAC wave).
+This has been tested with a **brand new account** on a **VAC-secured official Casual server** and [the account](https://steamcommunity.com/profiles/76561198393440661/) **didn't receive a untrusted ban** (tested on Wed. 7/6/17; one day after the VAC wave).
 
 # Important
 
