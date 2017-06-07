@@ -23,12 +23,12 @@ if grep -q libFuzion.so /proc/$csgo_pid/maps; then
 fi
 
 input="$(
-sudo hotpatcher -l $(pwd)/libFuzion.so $csgo_pid
-)"
+sudo hotpatcher -l $(pwd)/libFuzion.so $csgo_pid | tail -n 2 | head -n 1
+)" # Only read the 2nd latest line of the output from hotpatcher
 
 last_line="${input##*$'\n'}"
 
-if [ "$last_line" != "\$1 = (void *) 0x0" ]; then
+if [ "$last_line" != "Dll was injected at (nil)" ]; then
     /bin/echo -e "\e[32mSuccessfully injected using Hotpatcher!\e[0m"
 else
     /bin/echo -e "\e[31mInjection failed, make sure you've compiled...\e[0m"
