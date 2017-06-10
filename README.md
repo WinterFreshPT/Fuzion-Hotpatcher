@@ -17,4 +17,6 @@ This has been tested with a **brand new account** on a **VAC-secured official Ca
 
 `uload` and `rload` have been disabled by my because I'm not sure how to unload/reload AimTux with HotPatcher. Just close CS:GO (and reopen it) to unload/reload.  
   
-Valve can detect hotpatcher as Injector. Please keep this in mind and don't make this repository to known, so that Valve won't fix it fast.
+Hotpatcher can be detected like every other injector by VAC. **Please don't make this repository to known** and don't fork or star it.
+The expected detection time is ~1 month. **Don't submit this repository or forks of commits of this repository as Pull Request to Fuzion, AimTuxFuzion and bigger AimTux Forks.**.
+Well, I can't stop you but its for your own sake of not getting detected.
