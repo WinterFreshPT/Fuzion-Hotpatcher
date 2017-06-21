@@ -20,7 +20,7 @@ cd hotpatch
 cmake .
 make
 make test
-make install
+sudo make install
 ```
 
 **Arch**:
