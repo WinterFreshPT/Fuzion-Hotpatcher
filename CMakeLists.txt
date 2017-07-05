@@ -48,5 +48,5 @@ add_definitions(-DLUA)
 
 include_directories(${INCLUDE_DIRS})
 
-add_library(Fuzion SHARED ${SOURCE_FILES})
-target_link_libraries(Fuzion SDL2 GL dl xdo ${LUA_LIBRARY})
+add_library(Cancer SHARED ${SOURCE_FILES})
+target_link_libraries(Cancer SDL2 GL dl xdo ${LUA_LIBRARY})
